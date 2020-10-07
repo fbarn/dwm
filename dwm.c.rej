@@ -1,0 +1,17 @@
+@@ -92,7 +92,7 @@
+ 	int basew, baseh, incw, inch, maxw, maxh, minw, minh;
+ 	int bw, oldbw;
+ 	unsigned int tags;
+-	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;
++	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, isfakefullscreen;
+ 	Client *next;
+ 	Client *snext;
+ 	Monitor *mon;
+@@ -138,6 +138,7 @@
+ 	const char *title;
+ 	unsigned int tags;
+ 	int isfloating;
++	int isfakefullscreen;
+ 	int monitor;
+ } Rule;
+ 
